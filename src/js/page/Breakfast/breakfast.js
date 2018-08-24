@@ -9,13 +9,17 @@ export class Breakfast extends React.Component {
 
   constructor() {
     super();
-    console.log('breakfast page work');
   }
 
   render() {
+
+    let menu = ['Big Mac', 'New York Strips', 'Ramen'];
+
     return (
-      <Dish name="Big Mac"></Dish>
-    )
+        menu.map(item => (
+            <Dish name={item}></Dish>
+        ))
+    );
   }
 
 }
