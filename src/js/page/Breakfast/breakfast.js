@@ -3,6 +3,7 @@
  */
 
 import React from 'react'
+import {Dish} from '../../component/Dish/Dish'
 
 export class Breakfast extends React.Component {
 
@@ -13,7 +14,7 @@ export class Breakfast extends React.Component {
 
   render() {
     return (
-      <p>Breakfast work</p>
+      <Dish name="Big Mac"></Dish>
     )
   }
 
